@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+
+:root {
+  --bg-grad-soft-blue: hsl(240, 73%, 65%);
+  --bg-grad-soft-violet: hsl(273, 75%, 66%);
+  --divider-light-grey: hsl(240, 5%, 91%);
+  --txt-color-soft-red: hsl(14, 88%, 65%);
+  --txt-color-very-dark-desaturated-blue: hsl(238, 29%, 16%);
+  --txt-dark-grey: hsl(240, 6%, 50%);
+  --txt-very-dark-grey: hsl(237, 12%, 33%);
+}
+
+body {
+  /* background: linear-gradient( var(--bg-grad-soft-blue), var(--bg-grad-soft-violet)); */
+  background: linear-gradient(
+    to top,
+    var(--bg-grad-soft-blue),
+    var(--bg-grad-soft-violet)
+  );
+  background-repeat: no-repeat;
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  max-width: 70vw;
+  height: 70vh;
+  background-color: #fff;border-radius: 1.5rem;
+}
+.left {
+  width: 50%;
+  justify-content: flex-start;
+}
+
+.right {
+  justify-content: flex-end;
+  width: 50%;
+  margin-right: 5rem;
+  text-align: justify;
+}
+
+h1 {
+    font-size: xx-large;  
+}
+
+h3:active {
+    color: var(--txt-color-very-dark-desaturated-blue);
+    font-weight: 700;
+}
+
+h3 {
+    color: var(--txt-dark-grey);
+    font-weight: 400;
+}
+
+span.more {
+    padding-left: 3rem;
+    text-align: right;
+}
+
+hr {
+    color: var(--divider-light-grey);
+}
+
+/* footer */
+.attribution {
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 11px;
+  text-align: center;
+  color: var(--divider-light-grey);
+  padding-bottom: 1rem;
+}
+.attribution a {
+  color: white;
+}

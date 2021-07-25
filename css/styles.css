@@ -11,7 +11,6 @@
 }
 
 body {
-  /* background: linear-gradient( var(--bg-grad-soft-blue), var(--bg-grad-soft-violet)); */
   background: linear-gradient(
     to top,
     var(--bg-grad-soft-blue),
@@ -27,6 +26,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
 }
 
 .container {
@@ -34,10 +34,12 @@ body {
   justify-content: center;
   align-items: center;
   margin: auto;
-  max-width: 70vw;
+  width: 70%;
   height: 70vh;
-  background-color: #fff;border-radius: 1.5rem;
+  background-color: #fff;
+  border-radius: 1.5rem;
 }
+
 .left {
   width: 50%;
   justify-content: flex-start;
@@ -47,30 +49,80 @@ body {
   justify-content: flex-end;
   width: 50%;
   margin-right: 5rem;
-  text-align: justify;
+}
+
+.qa {
+  background-color: transparent;
+  position: relative;
+  overflow: hidden;
+  transition: 0.3s ease;
 }
 
 h1 {
-    font-size: xx-large;  
+  font-size: xx-large;
 }
 
-h3:active {
-    color: var(--txt-color-very-dark-desaturated-blue);
-    font-weight: 700;
+.ans {
+  color: var(--txt-dark-grey);
+  display: none;
+}
+
+.ans.active {
+  color: var(--txt-dark-grey);
+  display: block;
+  font-weight: 400;
+}
+
+h3.active {
+  background-color: #fff;
+  color: var(--txt-color-very-dark-desaturated-blue);
+  font-weight: 700;
 }
 
 h3 {
-    color: var(--txt-dark-grey);
-    font-weight: 400;
+  color: var(--txt-dark-grey);
+  font-weight: 400;
+}
+.btn-toggle {
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  position: absolute;
+  right: 0;
+  top: 5px;
 }
 
-span.more {
-    padding-left: 3rem;
-    text-align: right;
+button {
+  border: none;
+  outline: none;
+  background-color: #fff;
+  width: 30px;
+  height: 30px;
+}
+
+.more {
+  text-align: right;
+}
+
+.active.more {
+    display: none;
+}
+
+.less {
+  transform: rotate(180deg);
+  display: none;
+}
+
+.active.less {
+    display: block;
 }
 
 hr {
-    color: var(--divider-light-grey);
+  color: var(--divider-light-grey);
+  opacity: 0.3;
 }
 
 /* footer */

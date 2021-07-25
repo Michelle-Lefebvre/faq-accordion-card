@@ -1,45 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+
   <title>Frontend Mentor | FAQ Accordion Card</title>
 
   <link rel="stylesheet" href="./css/styles.css" />
-
 </head>
+
 <body>
   <div class="container">
     <div class="left"></div>
     <div class="right">
       <h1>FAQ</h1>
-      <h3 class="quest active">How many team members can I invite? <span><img src="./images/icon-arrow-down.svg" class="more" alt="arrow down"></span></h3>
-      <p class="active">
-        You can invite up to 2 additional users on the Free plan. There is no limit on 
-        team members for the Premium plan.
-      </p>
+      <div class="qa">
+        <h3 class="quest">How many team members can I invite?</h3>
+        <p class="ans">
+          You can invite up to 2 additional users on the Free plan. There is
+          no limit on team members for the Premium plan.
+        </p>
+        <button class="btn-toggle">
+          <img src="./images/icon-arrow-down.svg" class="more" alt="arrow down" />
+          <img src="./images/icon-arrow-down.svg" class="less" alt="arrow up" />
+        </button>
+      </div>
+      <hr />
+      <div class="qa">
+        <h3 class="quest">What is the maximum file upload size?</h3>
+        <p class="ans">
+          No more than 2GB. All files in your account must fit your allotted
+          storage space.
+        </p>
+        <button class="btn-toggle">
+          <img src="./images/icon-arrow-down.svg" class="more" alt="arrow down" />
+          <img src="./images/icon-arrow-down.svg" class="less" alt="arrow up" />
+        </button>
+      </div>
+      <hr />
+      <div class="qa">
+        <h3 class="quest">How do I reset my password?</h3>
+        <p class="ans">
+          Click “Forgot password” from the login page or “Change password”
+          from your profile page. A reset link will be emailed to you.
+        </p>
+        <button class="btn-toggle">
+          <img src="./images/icon-arrow-down.svg" class="more" alt="arrow down" />
+          <img src="./images/icon-arrow-down.svg" class="less" alt="arrow up" />
+        </button>
+      </div>
+      <hr />
+      <div class="qa">
+        <h3 class="quest">Can I cancel my subscription?</h3>
+        <p class="ans">
+          Yes! Send us a message and we’ll process your request no questions
+          asked.
+        </p>
+        <button class="btn-toggle">
+          <img src="./images/icon-arrow-down.svg" class="more" alt="arrow down" />
+          <img src="./images/icon-arrow-down.svg" class="less" alt="arrow up" />
+        </button>
+      </div>
       <hr>
-      What is the maximum file upload size?
-      No more than 2GB. All files in your account must fit your allotted storage space.
-      
-      How do I reset my password?
-      Click “Forgot password” from the login page or “Change password” from your profile page.
-      A reset link will be emailed to you.
-      
-      Can I cancel my subscription?
-      Yes! Send us a message and we’ll process your request no questions asked.
-      
-      Do you provide additional support?
-      Chat and email support is available 24/7. Phone lines are open during normal business hours.
+      <div class="qa">
+        <h3 class="quest">Do you provide additional support?</h3>
+        <p class="ans">
+          Chat and email support is available 24/7. Phone lines are open
+          during normal business hours.
+        </p>
+        <button class="btn-toggle">
+          <img src="./images/icon-arrow-down.svg" class="more" alt="arrow down" />
+          <img src="./images/icon-arrow-down.svg" class="less" alt="arrow up" />
+        </button>
+      </div>
     </div>
   </div>
 
   <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="https://portfolio-mml.netlify.app/">Michelle Lefebvre</a>.
+    Challenge by
+    <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by
+    <a href="https://portfolio-mml.netlify.app/">Michelle Lefebvre</a>.
   </div>
+
+  <script src="main.js"></script>
 </body>
+
 </html>
